@@ -1,7 +1,7 @@
-public class Centralita {
+public class Main {
     private Llamada[] llamadas;
 
-    public Centralita(Llamada[] llamadas) {
+    public Main(Llamada[] llamadas) {
         this.llamadas = llamadas;
     }
 }
