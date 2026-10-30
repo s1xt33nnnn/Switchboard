@@ -12,5 +12,18 @@ public class Switchboard {
 
     public void registerCall(Llamada llamada) {
         llamadas[numCalls] = llamada;
+        numCalls++;
+    }
+
+    public int getNumCalls(){
+        return numCalls;
+    }
+
+    public double getTotalCost(){
+        double total = 0;
+        for (int i = 1; i < numCalls; i++ ){
+            total = total + llamadas[i].getCost();
+        }
+        return total;
     }
 }
